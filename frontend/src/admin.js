@@ -8,8 +8,6 @@ import { Table, Button } from 'react-bootstrap';
 
 function Admin() {
     const [loader, setLoader] = useState(true);
-    const [scrolled, setScrolled] = useState(false);
-    const [show, setShow] = useState(false);
     const [dateFrom, setDateFrom] = useState(null);
     const [dateTo, setDateTo] = useState(null);
     const [reservations, setReservations] = useState([]);
@@ -19,26 +17,15 @@ function Admin() {
         setExpandedRow(expandedRow === index ? null : index);
     };
 
-    const handleScroll = () => {
-        const offset = window.scrollY;
-
-        if (offset > 200) {
-            setScrolled(true);
-        }
-        else {
-            setScrolled(false);
-        }
-    }
-
     const handleOpenReservation = () => {
-        setShow(true);
+        
     }
 
     useEffect(() => {
         setTimeout(() => {
             setLoader(false);
-        }, 5000);
-        window.addEventListener('scroll', handleScroll)
+        }, 3000);
+        //window.addEventListener('scroll', handleScroll)
     }, [])
 
 

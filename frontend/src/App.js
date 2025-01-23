@@ -68,7 +68,7 @@ function App() {
         }
 
         <Footer />
-        {scrolled ? <button className='whats-icon'><img src={'/whatsapp.png'} /></button> : <></>}
+        {scrolled ? <button className='whats-icon'><img src={'/whatsapp.png'} alt="Whatsapp" /></button> : <></>}
         {show && <ReservationModal
           show={show}
           setShow={setShow}
