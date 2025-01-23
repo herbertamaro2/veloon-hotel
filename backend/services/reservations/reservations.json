@@ -1,0 +1,40 @@
+[
+  {
+    "user": {
+      "name": "Estácio Severino Santana",
+      "cpf": "550.733.104-97",
+      "telefone": "(11) 95228-2531",
+      "email": "estaciosantana9@gmail.com",
+      "confirmInfo": true
+    },
+    "timestamp": "2025-01-23T08:07:14.931Z",
+    "room": {
+      "id": 1,
+      "name": "Quarto Duplo",
+      "image": "/photos/room.jpg",
+      "rate": {
+        "name": "Apenas Quarto",
+        "price": "R$ 752,73"
+      }
+    }
+  },
+  {
+    "user": {
+      "name": "Herbert Amaro Santana",
+      "cpf": "441.594.818-92",
+      "telefone": "(11) 98560-7568",
+      "email": "herbert.webdesigner@gmail.com",
+      "confirmInfo": true
+    },
+    "timestamp": "2025-01-23T08:19:37.950Z",
+    "room": {
+      "id": 1,
+      "name": "Quarto Duplo",
+      "image": "/photos/room.jpg",
+      "rate": {
+        "name": "Promoção Relâmpago",
+        "price": "R$ 784,10"
+      }
+    }
+  }
+]

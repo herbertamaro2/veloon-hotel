@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap');
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  background: #bbb;
+  width: 8px;
+  height: 0px;
+  cursor: n-resize;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  cursor: n-resize;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 1);
+  cursor: n-resize;
+}
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #E0EAFC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: 9999999999888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+}
+
+.box {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+  height: 200px;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+  width: 200px;
+}
+
+.bounce-7 {
+  animation-name: bounce-7;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+@keyframes bounce-7 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  10% {
+    transform: scale(1.1, .9) translateY(0);
+  }
+
+  30% {
+    transform: scale(.9, 1.1) translateY(-100px);
+  }
+
+  50% {
+    transform: scale(1.05, .95) translateY(0);
+  }
+
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none !important;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+
+.container {
+  padding: 0 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: #b6b6b6;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-shadow: inset 0px -9px 1px 0px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: inset 0px -9px 1px 0px rgba(0, 0, 0, 0.03);
+  box-shadow: inset 0px -9px 1px 0px rgba(0, 0, 0, 0.03);
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.logo-img {
+  height: 45px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.block-home-about {
+  margin-top: -100px;
+  z-index: 99;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -24px 29px 0px rgba(0,0,0,0.23);
+  background: rgba(255,255,255,0.9) !important;
+}
+
+
+.whats-icon {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 9999;
+  max-width: 58px;
+}
+
+.datepicker-reservation {
+  width: 1;
+  position: absolute;
+  opacity: 0;
+}
+
+.list-room {
+  transition: all ease 0.5s;
+  border-radius: 20px;
+  box-shadow: 0px 14px 43px 0px rgba(0,0,0,0.15);
+
+}
+
+.list-room:hover {
+  transform: scale(1.02);
+}
