@@ -28,7 +28,7 @@ function Gallery() {
           <img
             key={index}
             src={`/photos/${image.src}`}
-            alt={`Image ${index + 1}`}
+            alt={`Veloon ${index + 1}`}
             onClick={() => handleImageClick(image.src)}
           />
         ))}

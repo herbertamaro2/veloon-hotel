@@ -8,8 +8,10 @@ import { Table, Button } from 'react-bootstrap';
 
 function Admin() {
     const [loader, setLoader] = useState(true);
-    const [dateFrom, setDateFrom] = useState(null);
-    const [dateTo, setDateTo] = useState(null);
+    //const [dateFrom, setDateFrom] = useState(null);
+    //const [dateTo, setDateTo] = useState(null);
+    let dateFrom;
+    let dateTo;
     const [reservations, setReservations] = useState([]);
     const [expandedRow, setExpandedRow] = useState(null);
 

@@ -27,7 +27,7 @@ const About = ({onClick}) => {
                     <div className="w-full sm-w-6/12 f items-end">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3659.3519383085245!2d-46.86205777457543!3d-23.483829828853153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1737593660731!5m2!1spt-BR!2sbr"
                             width='100%' height="450" style={{ border: 0, borderRadius: 20 }} allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            loading="lazy" title="iframe-google" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                 </div>

@@ -8,15 +8,6 @@ function ReservationModal({ show, setShow, dateFrom, setDateFrom, dateTo, setDat
   const [isOpenFrom, setIsOpenFrom] = useState(false);
   const [isOpenTo, setIsOpenTo] = useState(false);
 
-  const formatDate = (date) => {
-    if (!date) return { weekday: '--', day: '--', monthYear: '--' };
-    return {
-      weekday: new Date(date).toLocaleDateString('pt-BR', { weekday: 'short' }).toUpperCase(),
-      day: new Date(date).getDate(),
-      monthYear: new Date(date).toLocaleDateString('pt-BR', { month: 'short', year: 'numeric' }).toUpperCase(),
-    };
-  };
-
   const handleClose = () => {
     setShow(false)
     setDateFrom(null)

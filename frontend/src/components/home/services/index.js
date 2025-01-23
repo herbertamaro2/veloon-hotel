@@ -8,7 +8,7 @@ const Services = ({onClick}) => {
             <div className='container' style={{ padding: 0 }}>
                 <div className='flex justify-between'>
                     <div className="w-full sm-w-6/12 flex flex-column gap-4 p-4 flex-start justify-center">
-                        <img src="/photos/meeting.jpg" className='rounded-xl' />
+                        <img src="/photos/meeting.jpg" className='rounded-xl' alt="Reuniões" />
 
                     </div>
                     <div className="w-full sm-w-6/12 flex flex-column gap-4 p-4 flex-start justify-center">

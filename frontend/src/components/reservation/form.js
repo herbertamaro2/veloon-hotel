@@ -52,6 +52,7 @@ const MakeReservation = ({ show, setShow, selectedRoom, setSelectedRoom, handleC
                 clearTimeout(timeoutId);
                 setTimeoutId(null);
             }, 4000);
+            handleCleanTimeout();
         } catch (error) {
             console.error("Erro ao enviar o formulário", error);
             toast.error("Ocorreu um erro ao enviar o formulário.");
