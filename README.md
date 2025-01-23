@@ -18,7 +18,7 @@ Abra o terminal e execute o comando:
 
 ```bash
 # Substitua pela URL do seu repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/herbertamaro2/veloon-hotel.git
 ```
 
 Entre no diretório do projeto:
@@ -55,7 +55,6 @@ Crie um arquivo `.env` na raiz do diretório `backend` e configure as variáveis
 
 ```
 PORT=5000
-DB_URL=mongodb://localhost:27017/nome-do-banco
 ```
 
 ### 2.4. Inicie o servidor
