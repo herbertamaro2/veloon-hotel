@@ -19,7 +19,9 @@
       {
         "src": "/(.*)",
         "dest": "/frontend/build/$1"
-      }
+      },
+
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
   
