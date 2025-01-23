@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import { Formik, Field, Form as FormikForm, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import InputMask from 'react-input-mask';
 import api from "../../services/api";
@@ -43,7 +42,7 @@ const MakeReservation = ({ show, setShow, selectedRoom, setSelectedRoom, handleC
                 room: selectedRoom
             }
             const response = await api.post("/reservation/add", data);
-            //console.log(response);
+            console.log(response, 'test sent data');
             toast.success("Formulário enviado com sucesso!");
             resetForm();
             handleClose();
